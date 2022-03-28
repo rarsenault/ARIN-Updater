@@ -10,7 +10,7 @@ Semi-automate adding/updating of ARIN auth IRR route/route6 objects
 
 ## Use
 
-* Get an API key from ARIN Online and edit the "api-key" variable in ARIN-IRR-Updater.py
+* Get an API key from ARIN Online and edit the "apikey" variable in ARIN-IRR-Updater.py
 * Copy conf/prefixes.example to conf/prefixes.txt and edit for your environment
 ** You will need your Org ID and ARIN POCs for Admin and Technical roles
 * run ARIN-IRR-Updater.py
