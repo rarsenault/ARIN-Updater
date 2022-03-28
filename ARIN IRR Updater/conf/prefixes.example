@@ -1,5 +1,0 @@
-prefix,origin,mnt-by,tech-c,admin-c,descr
-192.0.2.0/24,65535,MY-ORG-ID,MY-TECH-C,MY-ADMIN-C, lorum ipsum
-198.51.100.0/24,65535,MY-ORG-ID,MY-TECH-C,MY-ADMIN-C, dolor sit amet
-2001:0DB8::/32,65535,MY-ORG-ID,MY-TECH-C,MY-ADMIN-C, consectetur adipiscing elit
-2001:0DB8::/48,65535,MY-ORG-ID,MY-TECH-C,MY-ADMIN-C, sed do eiusmod
