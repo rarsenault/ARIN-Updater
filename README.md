@@ -10,6 +10,7 @@ Semi-automate adding/updating of ARIN auth IRR route/route6 objects
 
 ## Use
 
+* chmod 755 ./ARIN-IRR-Updater.py
 * Get an API key from ARIN Online and edit the "apikey" variable in ARIN-IRR-Updater.py
 * Copy conf/prefixes.example to conf/prefixes.txt and edit for your environment
   * You will need your Org ID and ARIN POCs for Admin and Technical roles
@@ -23,7 +24,7 @@ If a route/route6 object already exists for a given prefix, the script will upda
 
 ### Very Important Safety Tip
 
-_The script defaults to testing against the_ [ARIN OTE environment](https://www.arin.net/reference/tools/testing/?msclkid=f88c8e5aaedd11ec837b672505346c2e). I highly recommend testing in this manner until it returns the correct results. 
+_The script defaults to testing against the [ARIN OTE environment](https://www.arin.net/reference/tools/testing/?msclkid=f88c8e5aaedd11ec837b672505346c2e)_. I highly recommend testing in this manner until it returns the correct results. 
 
 * To publish/update objects in the public ARIN IRR, modify the "target_url" variable from "https://reg.ote.arin.net" to "https://reg.arin.net"
 
@@ -39,7 +40,7 @@ _The script defaults to testing against the_ [ARIN OTE environment](https://www.
 
 This may never happen, at least not by me, because I don't particularly need it.
 
-* Allow multiple descr entries (maybe someone wants to put a multi-line address for each object)\
+* Allow multiple descr entries (maybe someone wants to put a multi-line address for each object)
 * Better error reporting and sanity checking of the input CSV
 * Add a script to delete objects
 * Document some simple processes to check your advertisements, generate the info required by prefixes.txt, verify, clean legacy IRR objects, etc
