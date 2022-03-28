@@ -16,6 +16,8 @@ Semi-automate adding/updating of ARIN auth IRR route/route6 objects
   * You will need your Org ID and ARIN POCs for Admin and Technical roles
 * run "python3 ARIN-IRR-Updater.py"
 
+Could a sufficiently advanced shell script have performe the function? Sure could!!
+
 ## Notes
 
 If your ORG ID is "MY-ORG", then you need only put "MY-ORG" in each line for the mnt-by object. The script will add "MNT-" to your ORG ID for you.
