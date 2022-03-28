@@ -4,7 +4,10 @@ import requests
 from requests.structures import CaseInsensitiveDict
 import sys
 
+#Get your API key from ARIN Online and populate the apikey variable
 apikey = ""
+
+#Defaults to the ARIN OTE envrionment, change to "https://reg.arin.net" to push to public ARIN IRR
 target_url = "https://reg.ote.arin.net"
 
 #read in conf/prefixes.txt, using the file's headers to index the array
@@ -52,8 +55,6 @@ with open('conf/prefixes.txt', 'r') as f:
             irr_techc,
             irr_adminc,
         )
-        
-        #print(url)
 
         payload = str.encode(payload)
     
@@ -69,6 +70,6 @@ with open('conf/prefixes.txt', 'r') as f:
             response = requests.post(url, headers = headers, data = payload)
         else:
             response = requests.put(url, headers = headers, data = payload)
-        #print(url)
+      
         print("HTTP Status Code: " + str(response.status_code))
         print(response.text)
