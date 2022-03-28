@@ -11,8 +11,13 @@ Semi-automate adding/updating of ARIN auth IRR route/route6 objects
 ## Use
 
 * Get an API key from ARIN Online and edit the "api-key" variable in ARIN-IRR-Updater.py
-* Copy conf/prefixes.example to conf/prefixes.txt
+* Copy conf/prefixes.example to conf/prefixes.txt and edit for your environment
+** You will need your Org ID and ARIN POCs for Admin and Technical roles
 * run ARIN-IRR-Updater.py
+
+## Notes
+
+If your ORG ID is "MY-ORG", then you need only put "MY-ORG" in each line for the mnt-by object. The script will add "MNT-" to your ORG ID for you.
 
 If a route/route6 object already exists for a given prefix, the script will update it with the new info. If the object does not exist, the script will create it.
 
