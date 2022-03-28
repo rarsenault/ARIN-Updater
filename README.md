@@ -12,8 +12,8 @@ Semi-automate adding/updating of ARIN auth IRR route/route6 objects
 
 * Get an API key from ARIN Online and edit the "apikey" variable in ARIN-IRR-Updater.py
 * Copy conf/prefixes.example to conf/prefixes.txt and edit for your environment
-** You will need your Org ID and ARIN POCs for Admin and Technical roles
-* run ARIN-IRR-Updater.py
+  * You will need your Org ID and ARIN POCs for Admin and Technical roles
+* run "python3 ARIN-IRR-Updater.py"
 
 ## Notes
 
@@ -43,6 +43,7 @@ This may never happen, at least not by me, because I don't particularly need it.
 * Better error reporting and sanity checking of the input CSV
 * Add a script to delete objects
 * Document some simple processes to check your advertisements, generate the info required by prefixes.txt, verify, clean legacy IRR objects, etc
+* Add a settings file to read the basic variables from instead of editing them every time I clone the project
 
 ## References
 * [ARIN IRR RESTful API](https://www.arin.net/resources/manage/irr/irr-restful/)
