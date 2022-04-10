@@ -4,6 +4,10 @@
 
 Semi-automate adding/updating of ARIN auth IRR route/route6 objects
 
+## Audience
+
+The small'ish ISP who might be able to easily export prefix information to CSV through some means, and wants a way to push that information to ARIN's IRR. 
+
 ## Requirements
 
 * Tested on Python 3.6, 3.8
@@ -14,13 +18,13 @@ Semi-automate adding/updating of ARIN auth IRR route/route6 objects
 * Get an API key from ARIN Online and edit the "apikey" variable in ARIN-IRR-Updater.py
 * Copy conf/prefixes.example to conf/prefixes.txt and edit for your environment
   * You will need your Org ID and ARIN POCs for Admin and Technical roles
-* run "python3 ARIN-IRR-Updater.py"
+* run ```python3 ARIN-IRR-Updater.py```
 
 Could a sufficiently advanced shell script have performe the function? Sure could!!
 
 ## Notes
 
-If your ORG ID is "MY-ORG", then you need only put "MY-ORG" in each line for the mnt-by object. The script will add "MNT-" to your ORG ID for you.
+If your ORG ID is "MY-ORG", then you need only put "MY-ORG" in each line for the mnt-by object. The script will add "MNT-" to your ORG ID for you; this is a requirement imposed by the scheme expected by the [ARIN RESTful API](https://www.arin.net/resources/manage/irr/irr-restful/#creating-a-route-object).
 
 If a route/route6 object already exists for a given prefix, the script will update it with the new info. If the object does not exist, the script will create it.
 
