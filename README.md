@@ -14,7 +14,7 @@ The small'ish ISP who might be able to easily export prefix information to CSV t
 
 ## Use
 
-* chmod 755 ./ARIN-IRR-Updater.py
+* chmod +rx ./ARIN-IRR-Updater.py
 * Get an API key from ARIN Online and edit the "apikey" variable in ARIN-IRR-Updater.py
 * Copy conf/prefixes.example to conf/prefixes.txt and edit for your environment
   * You will need your Org ID and ARIN POCs for Admin and Technical roles
