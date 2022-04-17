@@ -12,15 +12,19 @@ The small'ish ISP who might be able to easily export prefix information to CSV t
 
 * Tested on Python 3.6, 3.8
 
-## Use
+## Installation & Use
 
-* chmod +rx ./ARIN-IRR-Updater.py
+* Read and understand Notes the Very Important Safety Tip sections below
+* ```cd /opt```
+* ```sudo git clone https://github.com/rarsenault/ARIN-Updater.git```
+* ```cd ARIN-Updater/```
+* ```chmod +rx ./ARIN-IRR-Updater.py```
 * Get an API key from ARIN Online and edit the "apikey" variable in ARIN-IRR-Updater.py
-* Copy conf/prefixes.example to conf/prefixes.txt and edit for your environment
-  * You will need your Org ID and ARIN POCs for Admin and Technical roles
+* ```sudo cp conf/prefixes.example conf/prefixes.txt```
+  * edit for your environment -- you will need your Org ID and ARIN POCs for Admin and Technical roles
 * run ```python3 ARIN-IRR-Updater.py```
 
-Could a sufficiently advanced shell script have performe the function? Sure could!!
+Could a sufficiently advanced shell script have performed the function? Sure could!!
 
 ## Notes
 
